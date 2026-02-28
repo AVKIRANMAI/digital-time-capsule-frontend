@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://dtime-capsule-backend.onrender.com",
+  baseURL: "https://time-capsule-backend-3ji4.onrender.com",
 });
 
 // ================= REQUEST INTERCEPTOR =================
