@@ -1,16 +1,82 @@
-# React + Vite
+# Digital Time Capsule – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Title
 
-Currently, two official plugins are available:
+Digital Time Capsule
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
 
-## React Compiler
+Digital Time Capsule is a full-stack web application where users can create a capsule containing a secret message and set a future unlock date. The message remains locked until the specified date arrives.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Create a digital capsule
+* Set unlock date for the message
+* Store secret messages securely
+* View capsule details
+* Unlock message when the date arrives
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack Used
+
+* React
+* Tailwind CSS
+* ShadCN UI
+* Axios
+* React Router
+
+## Installation Steps
+
+1. Clone the repository
+
+```
+git clone https://github.com/yourusername/digital-time-capsule-frontend
+```
+
+2. Install dependencies
+
+```
+npm install
+```
+
+3. Run the project
+
+```
+npm run dev
+```
+
+## Deployment Link
+
+https://your-netlify-link.netlify.app
+
+## Backend API Link
+
+https://your-backend-link.onrender.com
+
+## Login Credentials
+
+Not applicable (or add if you implemented login)
+
+
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Login Page
+![Login Page](login.png)
+
+### Signup Page
+![Signup Page](signup.png)
+
+### Dashboard
+![Dashboard](dashboard.png)
+
+### Create Capsule
+![Create Capsule](create.png)
+
+### View Capsule
+![View Capsule](view.png)
+
+
+## Video Walkthrough Link
+https://www.loom.com/share/23558eced587427591e651d536665d87
