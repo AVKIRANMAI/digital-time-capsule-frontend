@@ -23,7 +23,7 @@ function Signup() {
 
     try {
       const res = await fetch(
-        "http://localhost:5000/api/auth/signup",
+        "https://time-capsule-backend-3ji4.onrender.com/api/auth/signup",
         {
           method: "POST",
           headers: {

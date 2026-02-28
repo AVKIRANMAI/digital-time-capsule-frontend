@@ -25,7 +25,7 @@ function Login() {
 
     try {
       const res = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://time-capsule-backend-3ji4.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
