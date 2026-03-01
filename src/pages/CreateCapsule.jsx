@@ -491,8 +491,7 @@ function CreateCapsule() {
         recipientEmail,
       });
 
-      console.log("Capsule Created:", response.data);
-
+     
       const capsuleData = response.data?.data;
 
       if (!capsuleData || !capsuleData.id) {
