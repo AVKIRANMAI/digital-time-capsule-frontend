@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Clock, Eye, EyeOff } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
+import API from "../services/api";
+;
 
 function Login() {
   const navigate = useNavigate();
@@ -24,19 +26,15 @@ function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch(
-        "https://time-capsule-backend-3ji4.onrender.com/api/auth/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email, password }),
-        }
-      );
-       console.log("Fetch request completed");
-      const data = await res.json();
-         console.log("LOGIN RESPONSE:", data);
+     const res = await API.post("/api/auth/login", {
+  email,
+  password,
+});
+
+// const data = res.data
+//        console.log("Fetch request completed");
+//       const data = await res.json();
+//          console.log("LOGIN RESPONSE:", data);
 
       if (!res.ok) {
         alert(data.message || "Invalid credentials");
@@ -46,9 +44,8 @@ function Login() {
 
       // ✅ Save via AuthContext
       login(data);
-      setTimeout(() => {
-  navigate("/dashboard");
-},100) 
+      navigate("/dashboard");
+
       // navigate("/dashboard");
       
       // console.log("LOGIN RESPONSE:", data);
